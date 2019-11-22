@@ -28,32 +28,40 @@ function Header() {
       lineNumber: 9
     },
     __self: this
-  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/",
+  }, __jsx("link", {
+    rel: "stylesheet",
+    href: "https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 10
+    },
+    __self: this
+  }), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11
     },
     __self: this
   }, __jsx("a", {
     style: linkStyle,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 12
     },
     __self: this
   }, "Home")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/about",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 14
     },
     __self: this
   }, __jsx("a", {
     style: linkStyle,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 15
     },
     __self: this
   }, "About")));
@@ -10855,35 +10863,92 @@ var Index = function Index(props) {
       lineNumber: 6
     },
     __self: this
-  }, __jsx("h1", {
+  }, __jsx("div", {
+    id: "container",
     className: "jsx-3823738191",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 7
     },
     __self: this
-  }, "All Known Superheros"), __jsx("div", {
-    id: "container",
+  }, __jsx("div", {
+    id: "row",
     className: "jsx-3823738191",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 8
     },
     __self: this
-  }, __jsx("ul", {
-    className: "jsx-3823738191" + " " + "grid",
+  }, __jsx("h1", {
+    className: "jsx-3823738191",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 9
     },
     __self: this
+  }, "Superheros"), __jsx("table", {
+    className: "jsx-3823738191" + " " + "responsive-table highlight",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 21
+    },
+    __self: this
+  }, __jsx("thead", {
+    className: "jsx-3823738191",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 22
+    },
+    __self: this
+  }, __jsx("tr", {
+    className: "jsx-3823738191",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 24
+    },
+    __self: this
+  }, __jsx("th", {
+    className: "jsx-3823738191",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 25
+    },
+    __self: this
+  }, "Name"), __jsx("th", {
+    className: "jsx-3823738191",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 26
+    },
+    __self: this
+  }, "Publisher"), __jsx("th", {
+    className: "jsx-3823738191",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 27
+    },
+    __self: this
+  }, "Alignment"))), __jsx("tbody", {
+    className: "jsx-3823738191",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 31
+    },
+    __self: this
   }, props.shows.map(function (characters) {
-    return __jsx("li", {
+    return __jsx("tr", {
       key: characters.id,
       className: "jsx-3823738191",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 11
+        lineNumber: 33
+      },
+      __self: this
+    }, __jsx("td", {
+      className: "jsx-3823738191",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 34
       },
       __self: this
     }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_5___default.a, {
@@ -10891,21 +10956,35 @@ var Index = function Index(props) {
       as: "/p/".concat(characters.id),
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 12
+        lineNumber: 34
       },
       __self: this
     }, __jsx("a", {
       className: "jsx-3823738191",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 13
+        lineNumber: 34
       },
       __self: this
-    }, characters.name)));
-  }))), __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    }, characters.name))), __jsx("td", {
+      className: "jsx-3823738191",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 35
+      },
+      __self: this
+    }, characters.biography.publisher), __jsx("td", {
+      className: "jsx-3823738191",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 36
+      },
+      __self: this
+    }, characters.biography.alignment));
+  }))))), __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_2___default.a, {
     id: "3823738191",
     __self: this
-  }, "#container.jsx-3823738191 ul.jsx-3823738191{list-style:none;}#container.jsx-3823738191 .grid.jsx-3823738191 li.jsx-3823738191{float:left;width:20%;height:50px;border-right:1px dotted #CCC;border-bottom:1px dotted #CCC;padding:20px;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9ob21lL25rb3NpL0RvY3VtZW50cy9Qcm9ncmFtbWluZy9oZXJvZXMvcGFnZXMvaW5kZXguanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBa0JrQixBQUVzQyxBQUNDLFdBQVcsS0FEWCxLQUN3QixZQUE4Qiw2QkFBK0IsOEJBQWMsYUFBQyIsImZpbGUiOiIvaG9tZS9ua29zaS9Eb2N1bWVudHMvUHJvZ3JhbW1pbmcvaGVyb2VzL3BhZ2VzL2luZGV4LmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IExheW91dCBmcm9tICcuLi9jb21wb25lbnRzL015TGF5b3V0JztcbmltcG9ydCBMaW5rIGZyb20gJ25leHQvbGluayc7XG5pbXBvcnQgZmV0Y2ggZnJvbSAnaXNvbW9ycGhpYy11bmZldGNoJztcblxuY29uc3QgSW5kZXggPSBwcm9wcyA9PiAoXG4gIDxMYXlvdXQ+XG4gICAgPGgxPkFsbCBLbm93biBTdXBlcmhlcm9zPC9oMT5cbiAgICA8ZGl2IGlkPVwiY29udGFpbmVyXCI+XG4gICAgPHVsIGNsYXNzTmFtZT1cImdyaWRcIj5cbiAgICAgIHtwcm9wcy5zaG93cy5tYXAoY2hhcmFjdGVycyA9PiAoXG4gICAgICAgIDxsaSBrZXk9e2NoYXJhY3RlcnMuaWR9PlxuICAgICAgICAgIDxMaW5rIGhyZWY9XCIvcC9baWRdXCIgYXM9e2AvcC8ke2NoYXJhY3RlcnMuaWR9YH0+XG4gICAgICAgICAgICA8YT57Y2hhcmFjdGVycy5uYW1lfTwvYT5cbiAgICAgICAgICA8L0xpbms+XG4gICAgICAgIDwvbGk+XG4gICAgICApKX1cbiAgICA8L3VsPlxuICAgIDwvZGl2PlxuICAgICAgPHN0eWxlIGpzeD57YFxuICAgICAgI2NvbnRhaW5lciB1bCB7IGxpc3Qtc3R5bGU6IG5vbmU7IH1cbiAgICAgICNjb250YWluZXIgLmdyaWQgbGkgeyBmbG9hdDogbGVmdDsgd2lkdGg6IDIwJTsgaGVpZ2h0OiA1MHB4OyBib3JkZXItcmlnaHQ6IDFweCBkb3R0ZWQgI0NDQzsgYm9yZGVyLWJvdHRvbTogMXB4IGRvdHRlZCAjQ0NDOyBwYWRkaW5nOiAyMHB4OyB9XG4gICAgICBgfTwvc3R5bGU+XG4gIDwvTGF5b3V0PlxuKTtcblxuSW5kZXguZ2V0SW5pdGlhbFByb3BzID0gYXN5bmMgZnVuY3Rpb24oKSB7XG4gIGNvbnN0IHJlcyA9IGF3YWl0IGZldGNoKCdodHRwczovL3Jhdy5naXRodWJ1c2VyY29udGVudC5jb20vYWthYmFiL3N1cGVyaGVyby1hcGkvMC4yLjAvYXBpL2FsbC5qc29uJyk7XG4gIGNvbnN0IGRhdGEgPSBhd2FpdCByZXMuanNvbigpO1xuXG4gIGNvbnNvbGUubG9nKGBTaG93IGRhdGEgZmV0Y2hlZC4gQ291bnQ6ICR7ZGF0YS5sZW5ndGh9YCk7XG5cbiAgcmV0dXJuIHtcbiAgICBzaG93czogZGF0YS5tYXAoZW50cnkgPT4gZW50cnkpXG4gICAgXG4gIH07XG4gIFxufTtcblxuZXhwb3J0IGRlZmF1bHQgSW5kZXg7XG4iXX0= */\n/*@ sourceURL=/home/nkosi/Documents/Programming/heroes/pages/index.js */"));
+  }, "#container.jsx-3823738191 ul.jsx-3823738191{list-style:none;}#container.jsx-3823738191 .grid.jsx-3823738191 li.jsx-3823738191{float:left;width:20%;height:50px;border-right:1px dotted #CCC;border-bottom:1px dotted #CCC;padding:20px;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9ob21lL25rb3NpL0RvY3VtZW50cy9Qcm9ncmFtbWluZy9oZXJvZXMvcGFnZXMvaW5kZXguanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBNENnQixBQUVzQyxBQUNDLFdBQVcsS0FEWCxLQUN3QixZQUE4Qiw2QkFBK0IsOEJBQWMsYUFBQyIsImZpbGUiOiIvaG9tZS9ua29zaS9Eb2N1bWVudHMvUHJvZ3JhbW1pbmcvaGVyb2VzL3BhZ2VzL2luZGV4LmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IExheW91dCBmcm9tICcuLi9jb21wb25lbnRzL015TGF5b3V0JztcbmltcG9ydCBMaW5rIGZyb20gJ25leHQvbGluayc7XG5pbXBvcnQgZmV0Y2ggZnJvbSAnaXNvbW9ycGhpYy11bmZldGNoJztcblxuY29uc3QgSW5kZXggPSBwcm9wcyA9PiAoXG4gIDxMYXlvdXQ+XG4gICAgPGRpdiBpZD1cImNvbnRhaW5lclwiPlxuICAgICAgPGRpdiBpZD1cInJvd1wiPlxuICAgICAgICA8aDE+U3VwZXJoZXJvczwvaDE+XG5cbiAgICAgICAgey8qIDx1bCBjbGFzc05hbWU9XCJncmlkXCI+XG4gICAgICB7cHJvcHMuc2hvd3MubWFwKGNoYXJhY3RlcnMgPT4gKFxuICAgICAgICA8bGkga2V5PXtjaGFyYWN0ZXJzLmlkfT5cbiAgICAgICAgICA8TGluayBocmVmPVwiL3AvW2lkXVwiIGFzPXtgL3AvJHtjaGFyYWN0ZXJzLmlkfWB9PlxuICAgICAgICAgICAgPGE+e2NoYXJhY3RlcnMubmFtZX08L2E+XG4gICAgICAgICAgPC9MaW5rPlxuICAgICAgICA8L2xpPlxuICAgICAgKSl9XG4gICAgPC91bD4gKi99XG5cbiAgICAgICAgPHRhYmxlIGNsYXNzTmFtZT1cInJlc3BvbnNpdmUtdGFibGUgaGlnaGxpZ2h0XCI+XG4gICAgICAgICAgPHRoZWFkPlxuXG4gICAgICAgICAgICA8dHI+XG4gICAgICAgICAgICAgIDx0aD5OYW1lPC90aD5cbiAgICAgICAgICAgICAgPHRoPlB1Ymxpc2hlcjwvdGg+XG4gICAgICAgICAgICAgIDx0aD5BbGlnbm1lbnQ8L3RoPlxuICAgICAgICAgICAgPC90cj5cbiAgICAgICAgICA8L3RoZWFkPlxuXG4gICAgICAgICAgPHRib2R5PlxuICAgICAgICAgICAge3Byb3BzLnNob3dzLm1hcChjaGFyYWN0ZXJzID0+IChcbiAgICAgICAgICAgICAgPHRyIGtleT17Y2hhcmFjdGVycy5pZH0+XG4gICAgICAgICAgICAgICAgPHRkPjxMaW5rIGhyZWY9XCIvcC9baWRdXCIgYXM9e2AvcC8ke2NoYXJhY3RlcnMuaWR9YH0+PGE+e2NoYXJhY3RlcnMubmFtZX08L2E+PC9MaW5rPjwvdGQ+XG4gICAgICAgICAgICAgICAgPHRkPntjaGFyYWN0ZXJzLmJpb2dyYXBoeS5wdWJsaXNoZXJ9PC90ZD5cbiAgICAgICAgICAgICAgICA8dGQ+e2NoYXJhY3RlcnMuYmlvZ3JhcGh5LmFsaWdubWVudH08L3RkPlxuICAgICAgICAgICAgICA8L3RyPlxuICAgICAgICAgICAgKSl9XG4gICAgICAgICAgPC90Ym9keT5cbiAgICAgICAgPC90YWJsZT5cblxuXG4gICAgICA8L2Rpdj5cbiAgICA8L2Rpdj5cbiAgICA8c3R5bGUganN4PntgXG4gICAgICAjY29udGFpbmVyIHVsIHsgbGlzdC1zdHlsZTogbm9uZTsgfVxuICAgICAgI2NvbnRhaW5lciAuZ3JpZCBsaSB7IGZsb2F0OiBsZWZ0OyB3aWR0aDogMjAlOyBoZWlnaHQ6IDUwcHg7IGJvcmRlci1yaWdodDogMXB4IGRvdHRlZCAjQ0NDOyBib3JkZXItYm90dG9tOiAxcHggZG90dGVkICNDQ0M7IHBhZGRpbmc6IDIwcHg7IH1cbiAgICAgIGB9PC9zdHlsZT5cbiAgPC9MYXlvdXQ+XG4pO1xuXG5JbmRleC5nZXRJbml0aWFsUHJvcHMgPSBhc3luYyBmdW5jdGlvbiAoKSB7XG4gIGNvbnN0IHJlcyA9IGF3YWl0IGZldGNoKCdodHRwczovL3Jhdy5naXRodWJ1c2VyY29udGVudC5jb20vYWthYmFiL3N1cGVyaGVyby1hcGkvMC4yLjAvYXBpL2FsbC5qc29uJyk7XG4gIGNvbnN0IGRhdGEgPSBhd2FpdCByZXMuanNvbigpO1xuXG4gIGNvbnNvbGUubG9nKGBTaG93IGRhdGEgZmV0Y2hlZC4gQ291bnQ6ICR7ZGF0YS5sZW5ndGh9YCk7XG5cbiAgcmV0dXJuIHtcbiAgICBzaG93czogZGF0YS5tYXAoZW50cnkgPT4gZW50cnkpXG5cbiAgfTtcblxufTtcblxuZXhwb3J0IGRlZmF1bHQgSW5kZXg7XG4iXX0= */\n/*@ sourceURL=/home/nkosi/Documents/Programming/heroes/pages/index.js */"));
 };
 
 Index.getInitialProps =

@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 5);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -121,32 +121,40 @@ function Header() {
       lineNumber: 9
     },
     __self: this
-  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/",
+  }, __jsx("link", {
+    rel: "stylesheet",
+    href: "https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 10
+    },
+    __self: this
+  }), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11
     },
     __self: this
   }, __jsx("a", {
     style: linkStyle,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 12
     },
     __self: this
   }, "Home")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/about",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 14
     },
     __self: this
   }, __jsx("a", {
     style: linkStyle,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 15
     },
     __self: this
   }, "About")));
@@ -1939,115 +1947,182 @@ module.exports = __webpack_require__(/*! ./dist/client/link */ "./node_modules/n
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _components_MyLayout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/MyLayout */ "./components/MyLayout.js");
-/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! isomorphic-unfetch */ "isomorphic-unfetch");
-/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-jsx/style */ "styled-jsx/style");
+/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _components_MyLayout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/MyLayout */ "./components/MyLayout.js");
+/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! isomorphic-unfetch */ "isomorphic-unfetch");
+/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_3__);
 var _jsxFileName = "/home/nkosi/Documents/Programming/heroes/pages/p/[id].js";
 
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
 
-const Post = props => __jsx(_components_MyLayout__WEBPACK_IMPORTED_MODULE_1__["default"], {
+const Post = props => __jsx(_components_MyLayout__WEBPACK_IMPORTED_MODULE_2__["default"], {
   __source: {
     fileName: _jsxFileName,
     lineNumber: 5
   },
   __self: undefined
-}, __jsx("h1", {
+}, __jsx("div", {
+  className: "container",
   __source: {
     fileName: _jsxFileName,
     lineNumber: 6
   },
   __self: undefined
-}, props.characters.name), __jsx("img", {
-  src: props.characters.images.lg,
+}, __jsx("div", {
+  className: "jsx-78746344" + " " + "row",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 7
+  },
+  __self: undefined
+}, __jsx("h1", {
+  className: "jsx-78746344",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 8
+  },
+  __self: undefined
+}, props.characters.name), __jsx("div", {
+  class: "col s6 polaroid",
+  className: "jsx-78746344",
   __source: {
     fileName: _jsxFileName,
     lineNumber: 9
   },
   __self: undefined
-}), __jsx("h3", {
+}, __jsx("img", {
+  src: props.characters.images.lg,
+  style: {
+    width: 25 + '%'
+  },
+  className: "jsx-78746344",
   __source: {
     fileName: _jsxFileName,
     lineNumber: 10
   },
   __self: undefined
-}, "Power Stats"), __jsx("ul", {
+}), __jsx("div", {
+  class: "heading",
+  className: "jsx-78746344",
   __source: {
     fileName: _jsxFileName,
     lineNumber: 11
   },
   __self: undefined
-}, __jsx("li", {
+})), __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
+  id: "78746344",
+  __self: undefined
+}, ".polaroid.jsx-78746344{width:80%;background-color:white;box-shadow:0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);margin-bottom:25px;}.heading.jsx-78746344{text-align:center;padding:10px 20px;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9ob21lL25rb3NpL0RvY3VtZW50cy9Qcm9ncmFtbWluZy9oZXJvZXMvcGFnZXMvcC9baWRdLmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQWNvQixBQUdhLEFBTVEsVUFMSyxRQU1MLGVBTDBELEdBTTlFLGtFQUxxQixtQkFDckIiLCJmaWxlIjoiL2hvbWUvbmtvc2kvRG9jdW1lbnRzL1Byb2dyYW1taW5nL2hlcm9lcy9wYWdlcy9wL1tpZF0uanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgTGF5b3V0IGZyb20gJy4uLy4uL2NvbXBvbmVudHMvTXlMYXlvdXQnO1xuaW1wb3J0IGZldGNoIGZyb20gJ2lzb21vcnBoaWMtdW5mZXRjaCc7XG5cbmNvbnN0IFBvc3QgPSBwcm9wcyA9PiAoXG4gIDxMYXlvdXQ+XG4gICAgPGRpdiBjbGFzc05hbWU9XCJjb250YWluZXJcIj5cbiAgICAgIDxkaXYgY2xhc3NOYW1lPVwicm93XCI+XG4gICAgICAgIDxoMT57cHJvcHMuY2hhcmFjdGVycy5uYW1lfTwvaDE+XG4gICAgICAgIDxkaXYgY2xhc3M9XCJjb2wgczYgcG9sYXJvaWRcIj5cbiAgICAgICAgICA8aW1nIHNyYz17cHJvcHMuY2hhcmFjdGVycy5pbWFnZXMubGd9IHN0eWxlPXt7d2lkdGg6IDI1ICsgJyUnfX0gIC8+XG4gICAgICAgICAgPGRpdiBjbGFzcz1cImhlYWRpbmdcIj5cbiAgICAgICAgICAgIHsvKiA8cD57cHJvcHMuY2hhcmFjdGVycy5uYW1lfTwvcD4gKi99XG4gICAgICAgICAgPC9kaXY+XG4gICAgICAgIDwvZGl2PlxuICAgICAgICA8c3R5bGUganN4PntgXG4ucG9sYXJvaWQge1xuICB3aWR0aDogODAlO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcbiAgYm94LXNoYWRvdzogMCA0cHggOHB4IDAgcmdiYSgwLCAwLCAwLCAwLjIpLCAwIDZweCAyMHB4IDAgcmdiYSgwLCAwLCAwLCAwLjE5KTtcbiAgbWFyZ2luLWJvdHRvbTogMjVweDtcbn1cbi5oZWFkaW5ne1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIHBhZGRpbmc6IDEwcHggMjBweDtcbn1cblxuYH08L3N0eWxlPlxuICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImNvbCBzNlwiPlxuICAgICAgICAgIDxoMz5CaW9ncmFwaHk8L2gzPlxuICAgICAgICAgIDx1bD5cbiAgICAgICAgICAgIDxsaT5OYW1lIDoge3Byb3BzLmNoYXJhY3RlcnMuYmlvZ3JhcGh5LmZ1bGxOYW1lfTwvbGk+XG4gICAgICAgICAgICA8bGk+QWx0ZXIgRWdvczoge3Byb3BzLmNoYXJhY3RlcnMuYmlvZ3JhcGh5LmFsdGVyRWdvc308L2xpPlxuICAgICAgICAgICAgPGxpPlB1Ymxpc2hlciA6e3Byb3BzLmNoYXJhY3RlcnMuYmlvZ3JhcGh5LnB1Ymxpc2hlcn08L2xpPlxuICAgICAgICAgICAgPGxpPkdvb2Qgb3IgQmFkOiB7cHJvcHMuY2hhcmFjdGVycy5iaW9ncmFwaHkuYWxpZ25tZW50fTwvbGk+XG4gICAgICAgICAgPC91bD5cbiAgICAgICAgPC9kaXY+XG4gICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiY29sIHM2XCI+XG4gICAgICAgICAgPGgzPlBvd2VyIFN0YXRzPC9oMz5cbiAgICAgICAgICA8dWw+XG4gICAgICAgICAgICA8bGk+SW50ZWxsaWdlbmNlIDoge3Byb3BzLmNoYXJhY3RlcnMucG93ZXJzdGF0cy5pbnRlbGxpZ2VuY2V9PC9saT5cbiAgICAgICAgICAgIDxsaT4gU3RyZW5ndGggOiB7cHJvcHMuY2hhcmFjdGVycy5wb3dlcnN0YXRzLnN0cmVuZ3RofTwvbGk+XG4gICAgICAgICAgICA8bGk+U3BlZWQgOiB7cHJvcHMuY2hhcmFjdGVycy5wb3dlcnN0YXRzLnNwZWVkfTwvbGk+XG4gICAgICAgICAgICA8bGk+UG93ZXIgOiB7cHJvcHMuY2hhcmFjdGVycy5wb3dlcnN0YXRzLnBvd2VyfTwvbGk+XG4gICAgICAgICAgPC91bD5cbiAgICAgICAgPC9kaXY+XG5cblxuICAgICAgPC9kaXY+XG4gICAgPC9kaXY+XG4gIDwvTGF5b3V0PlxuKTtcblxuUG9zdC5nZXRJbml0aWFsUHJvcHMgPSBhc3luYyBmdW5jdGlvbiAoY29udGV4dCkge1xuICBjb25zdCB7IGlkIH0gPSBjb250ZXh0LnF1ZXJ5O1xuICBjb25zdCByZXMgPSBhd2FpdCBmZXRjaChgaHR0cHM6Ly9ha2FiYWIuZ2l0aHViLmlvL3N1cGVyaGVyby1hcGkvYXBpL2lkLyR7aWR9Lmpzb25gKTtcbiAgY29uc29sZS5sb2cocmVzKVxuICBjb25zdCBjaGFyYWN0ZXJzID0gYXdhaXQgcmVzLmpzb24oKTtcblxuICBjb25zb2xlLmxvZyhgRmV0Y2hlZCBjaGFyYWN0ZXJzOiAke2NoYXJhY3RlcnMubmFtZX1gKTtcblxuICByZXR1cm4geyBjaGFyYWN0ZXJzIH07XG59O1xuXG5leHBvcnQgZGVmYXVsdCBQb3N0OyJdfQ== */\n/*@ sourceURL=/home/nkosi/Documents/Programming/heroes/pages/p/[id].js */"), __jsx("div", {
+  className: "jsx-78746344" + " " + "col s6",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 12
+    lineNumber: 28
   },
   __self: undefined
-}, "Intelligence : ", props.characters.powerstats.intelligence), __jsx("li", {
+}, __jsx("h3", {
+  className: "jsx-78746344",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 13
-  },
-  __self: undefined
-}, " Strength : ", props.characters.powerstats.strength), __jsx("li", {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 14
-  },
-  __self: undefined
-}, "Speed : ", props.characters.powerstats.speed), __jsx("li", {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 15
-  },
-  __self: undefined
-}, "Power : ", props.characters.powerstats.power)), __jsx("h3", {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 18
+    lineNumber: 29
   },
   __self: undefined
 }, "Biography"), __jsx("ul", {
+  className: "jsx-78746344",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 19
+    lineNumber: 30
   },
   __self: undefined
 }, __jsx("li", {
+  className: "jsx-78746344",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 20
+    lineNumber: 31
   },
   __self: undefined
 }, "Name : ", props.characters.biography.fullName), __jsx("li", {
+  className: "jsx-78746344",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 21
+    lineNumber: 32
   },
   __self: undefined
 }, "Alter Egos: ", props.characters.biography.alterEgos), __jsx("li", {
+  className: "jsx-78746344",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 22
+    lineNumber: 33
   },
   __self: undefined
 }, "Publisher :", props.characters.biography.publisher), __jsx("li", {
+  className: "jsx-78746344",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 23
+    lineNumber: 34
   },
   __self: undefined
-}, "Good or Bad: ", props.characters.biography.alignment)));
+}, "Good or Bad: ", props.characters.biography.alignment))), __jsx("div", {
+  className: "jsx-78746344" + " " + "col s6",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 37
+  },
+  __self: undefined
+}, __jsx("h3", {
+  className: "jsx-78746344",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 38
+  },
+  __self: undefined
+}, "Power Stats"), __jsx("ul", {
+  className: "jsx-78746344",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 39
+  },
+  __self: undefined
+}, __jsx("li", {
+  className: "jsx-78746344",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 40
+  },
+  __self: undefined
+}, "Intelligence : ", props.characters.powerstats.intelligence), __jsx("li", {
+  className: "jsx-78746344",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 41
+  },
+  __self: undefined
+}, " Strength : ", props.characters.powerstats.strength), __jsx("li", {
+  className: "jsx-78746344",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 42
+  },
+  __self: undefined
+}, "Speed : ", props.characters.powerstats.speed), __jsx("li", {
+  className: "jsx-78746344",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 43
+  },
+  __self: undefined
+}, "Power : ", props.characters.powerstats.power))))));
 
 Post.getInitialProps = async function (context) {
   const {
     id
   } = context.query;
-  const res = await isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_2___default()(`https://akabab.github.io/superhero-api/api/id/${id}.json`);
+  const res = await isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_3___default()(`https://akabab.github.io/superhero-api/api/id/${id}.json`);
   console.log(res);
   const characters = await res.json();
   console.log(`Fetched characters: ${characters.name}`);
@@ -2060,7 +2135,7 @@ Post.getInitialProps = async function (context) {
 
 /***/ }),
 
-/***/ 5:
+/***/ 4:
 /*!*******************************!*\
   !*** multi ./pages/p/[id].js ***!
   \*******************************/
@@ -2212,6 +2287,17 @@ module.exports = require("react");
 /***/ (function(module, exports) {
 
 module.exports = require("react-is");
+
+/***/ }),
+
+/***/ "styled-jsx/style":
+/*!***********************************!*\
+  !*** external "styled-jsx/style" ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("styled-jsx/style");
 
 /***/ }),
 
